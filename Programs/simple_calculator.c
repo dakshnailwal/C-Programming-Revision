@@ -21,7 +21,7 @@ Why returning NAN from an int-returning function causes garbage values
    - int and double are stored differently in memory.
    - When you try to return NAN (a double) from a function that returns int, 
      the compiler doesn't perform a valid type conversion.
-   - Instead, it blindly copies bits (memory) assuming it's an int — this is 
+   - Instead, it blindly copies bits (memory) assuming it's an int â€” this is 
      undefined behavior in C.
 
 3. What is a Garbage Value?
