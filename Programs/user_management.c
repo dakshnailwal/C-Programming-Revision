@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
-#include <unistd.h>
 #include <termios.h>
+#include <unistd.h>
+
 
 #define MAX_USERS 10          // max users allowed
 #define CREDENTIAL_LENGTH 30  // max username/password length
@@ -123,4 +124,5 @@ void fix_fgets_input(char* string)
 {
   string[strcspn(string, "\n")] = '\0'; // cut at newline
 }
+
 
