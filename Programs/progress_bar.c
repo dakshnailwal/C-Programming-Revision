@@ -9,12 +9,12 @@ const int MAX_TASKS = 10;    // number of tasks to simulate
 typedef struct
 {
 	int id;         // task number (1 to MAX_TASKS)
-	int progress;   // current progress of the task (0–100)
+	int progress;   // current progress of the task (0â€“100)
 	int step;       // how much progress increases per loop
 }Task;
 
-void print_bar(Task task);
 void clear_screen();
+void print_bar(Task task);
 
 int main()
 {
@@ -27,7 +27,7 @@ int main()
 	{
 		tasks[i].id = i+1;      // task IDs from 1 to 10
 		tasks[i].progress = 0;  // start with 0% progress
-		tasks[i].step = rand()%5; // random increment (0–4) per cycle
+		tasks[i].step = rand()%5; // random increment (0â€“4) per cycle
 	}
 	
 	int tasks_incomplete = 1; // flag to keep looping until all done
@@ -107,4 +107,5 @@ void print_bar(Task task)
 	
     printf("] %d%%\n", task.progress); // show exact % on the right
 }
+
 
