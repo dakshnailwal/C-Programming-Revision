@@ -1,6 +1,6 @@
 #include<stdio.h> 
-#include<unistd.h>	// sleep();
 #include<stdlib.h> // system();
+#include<unistd.h>	// sleep();
 #include<time.h>	// seeding rand();
 
 const int BAR_LENGTH = 50;   // total length of the progress bar
